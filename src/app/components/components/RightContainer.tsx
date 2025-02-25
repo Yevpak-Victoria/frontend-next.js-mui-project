@@ -12,7 +12,7 @@ export function RightContainer ({ children } : RightContainerProps)  {
         alignItems: 'center',
         justifyContent: 'center',
         width: '100%',
-        px: '10%',
+        px: '13%',
         position: 'relative',
 
 
