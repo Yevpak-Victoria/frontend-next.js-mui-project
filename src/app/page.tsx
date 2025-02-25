@@ -22,7 +22,7 @@ export default function Home() {
 
         </Box>
         <Box sx={{display: 'flex', flexDirection: 'column', mt: 3}}>
-            <CustomCheckbox checked={checkedTerms} onChange={(e) => setCheckedTerms(e.target.checked)}>Приймає умови використання та обробки персональних даних?</CustomCheckbox>
+            <CustomCheckbox checked={checkedTerms} required onChange={(e) => setCheckedTerms(e.target.checked)}>Приймає умови використання та обробки персональних даних?</CustomCheckbox>
             <CustomCheckbox checked={checkedNotifications} onChange={(e) => setCheckedNotifications(e.target.checked)}>Бажаєте отримувати персоналізовані сповіщення?</CustomCheckbox>
         </Box>
     </PageStructure>

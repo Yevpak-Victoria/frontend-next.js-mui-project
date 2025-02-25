@@ -6,10 +6,11 @@ import {ReactNode} from "react";
 interface RegisterButtonProps {
     children: ReactNode;
     registerImgSrc: string;
+    onClick?: () => void;
 }
 
-export function RegisterButton( {children, registerImgSrc}: RegisterButtonProps ) {
-    return <Button variant="outlined" onClick={() => {alert('Done!')}}
+export function RegisterButton( {children, registerImgSrc, onClick}: RegisterButtonProps ) {
+    return <Button variant="outlined" onClick={onClick}
     sx={{
         fontSize: '0.6rem',
         borderRadius: 8,

@@ -4,6 +4,7 @@ import {Box, Checkbox, Typography} from "@mui/material";
 type CustomCheckboxProps = {
     children: ReactNode;
     checked: boolean;
+    required?: boolean;
     onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
@@ -12,15 +13,13 @@ const CustomCheckbox = ({children, checked, onChange} : CustomCheckboxProps) => 
     return <Box display="flex" alignItems="center">
         <Checkbox checked={checked} onChange={onChange}
                   sx={{
-            color: 'primary.main',
+            color: '#535353',
             '&.Mui-checked': {
                 color: 'secondary.main',
             },
             transform: 'scale(0.7)',
             '& .MuiSvgIcon-root': {
-                fontSize: 22, // Менший чекбокс
-                strokeWidth: 0.5, // Ще тонший контур
-                stroke: 'black', // Колір контуру (можна змінити)
+                fontSize: 22, // Менший чекбок
             },
             padding: 0,
         }} />
