@@ -1,58 +1,30 @@
-import {Box, Typography} from "@mui/material";
-import { red } from "@mui/material/colors";
-import {RegisterButton} from "@/app/components/RegisterButton";
+'use client'
 
-const registr = ["Google", "Apple", "Dia", "Email"];
+import {Box} from "@mui/material";
+import {AuthorisationLink} from "@/app/components/AuthorisationLink";
+import {SetOfButtons} from "@/app/components/SetOfButtons";
+import React from "react";
+import CustomCheckbox from "@/app/components/CustomCheckbox";
+import PageStructure from "@/app/components/PageStructure";
+import RegistrationText from "@/app/components/components/RegistrationText";
 
 export default function Home() {
-  return <Box sx={{
-    color: red,
-    display: 'flex',
-    flexDirection: 'row',
-  }}>
-    <Box
-        component="img"
-        src="/image.png"
-        alt="Background Image"
-        sx={{
-          width: 'auto%',
-          height: "100vh",
-          filter: "brightness(50%)",
-        }}
-    ></Box>
-    <Box component="div" className="rightContainer" sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: '100%',
-        px: 20,
-    }}>
 
-        <Box
-            component="img"
-            src="/suspilne-logo.png"
-            alt="Logo Suspilne Image"
-            sx={{
-                width: '35%',
+    const [checkedTerms, setCheckedTerms] = React.useState(false);
+    const [checkedNotifications, setCheckedNotifications] = React.useState(false);
 
-            }}
-        ></Box>
+    return <PageStructure>
 
-      <Typography component="h1" sx={{
-          fontSize: '1.5rem',
-          width: '100%',
-          textAlign: 'center',
-      }}>Реєстрація</Typography>
-        <Box
-        sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-        }}>
-            {registr.map((name) => <RegisterButton key={name}> {name} </RegisterButton>)}
+        <Box sx={{mt: 3}}>
+            <RegistrationText />
+            <SetOfButtons />
+            <AuthorisationLink />
+
         </Box>
+        <Box sx={{display: 'flex', flexDirection: 'column', mt: 3}}>
+            <CustomCheckbox checked={checkedTerms} onChange={(e) => setCheckedTerms(e.target.checked)}>Приймає умови використання та обробки персональних даних?</CustomCheckbox>
+            <CustomCheckbox checked={checkedNotifications} onChange={(e) => setCheckedNotifications(e.target.checked)}>Бажаєте отримувати персоналізовані сповіщення?</CustomCheckbox>
+        </Box>
+    </PageStructure>
 
-    </Box>
-  </Box>;
 }
