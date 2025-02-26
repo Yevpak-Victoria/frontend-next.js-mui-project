@@ -1,8 +1,12 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
-    // assetPrefix: "/frontend-next.js-mui-project/",
-    // basePath: "/frontend-next.js-mui-project",
+
+
+    basePath: isProd ? "/my-next-app" : "",
+    assetPrefix: isProd ? "/my-next-app/" : "",
 };
 
 export default nextConfig;
