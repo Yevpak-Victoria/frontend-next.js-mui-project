@@ -3,7 +3,7 @@ import {Box} from "@mui/material";
 export default function ImageBackground(){
     return <Box
         component="img"
-        src="/image.svg"
+        src="./image.svg"
         alt="Background Image"
         sx={{
             width: 'auto%',

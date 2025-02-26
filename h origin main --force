@@ -1,0 +1,29 @@
+[33mcommit 7755c09e4b58ab7843e95df3109efe10689e6139[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: viktoria yevpak <viktoriia.yevpak@cosmonova-broadcast.tv>
+Date:   Tue Feb 25 22:03:55 2025 +0200
+
+    inish the design of both pages
+
+[33mcommit 51bb21a0104e19a5d41e535d783e2e2bc1e140bf[m
+Author: viktoria yevpak <viktoriia.yevpak@cosmonova-broadcast.tv>
+Date:   Tue Feb 25 15:50:00 2025 +0200
+
+    Finished main changes, only some details left
+
+[33mcommit d868dbae90edc3c600f43ab29a98956fdd68e8e3[m[33m ([m[1;31morigin/try-to-figure-out-how-mui-work-with-nextjs[m[33m)[m
+Author: viktoria yevpak <viktoriia.yevpak@cosmonova-broadcast.tv>
+Date:   Tue Feb 25 12:07:18 2025 +0200
+
+    About to finish page 1, started page 2
+
+[33mcommit a6e3745d2b4090d6d6c55f01947c5c5853d1f5a6[m
+Author: viktoria yevpak <viktoriia.yevpak@cosmonova-broadcast.tv>
+Date:   Mon Feb 24 11:35:56 2025 +0200
+
+    About to finipsh page 1, started page 2
+
+[33mcommit c24a22d45eb9b3b57e3ee36f5ad1fd50acaeb1bd[m
+Author: viktoria yevpak <viktoriia.yevpak@cosmonova-broadcast.tv>
+Date:   Fri Feb 21 16:31:42 2025 +0200
+
+    Initial commit from Create Next App
