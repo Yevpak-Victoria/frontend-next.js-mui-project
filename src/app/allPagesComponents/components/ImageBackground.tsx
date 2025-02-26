@@ -1,9 +1,12 @@
 import {Box} from "@mui/material";
 
 export default function ImageBackground(){
+
+    const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
     return <Box
         component="img"
-        src="/public/image.svg"
+        src={`${basePath}/image.svg`}
         alt="Background Image"
         sx={{
             width: 'auto%',
