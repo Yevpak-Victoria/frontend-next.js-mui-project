@@ -4,9 +4,8 @@ const isProd = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
 
-
-    basePath: isProd ? "/my-next-app" : "",
-    assetPrefix: isProd ? "/my-next-app/" : "",
+    basePath: isProd ? "/frontend-next.js-mui-project" : "",
+    assetPrefix: isProd ? "/frontend-next.js-mui-project/" : "",
 };
 
 export default nextConfig;
