@@ -1,6 +1,6 @@
 
-import PageStructure from "@/app/components/PageStructure";
-import RegistrationText from "@/app/components/components/RegistrationText";
+import PageStructure from "@/app/allPagesComponents/PageStructure";
+import RegistrationText from "@/app/allPagesComponents/components/RegistrationText";
 import {Box, Button, Typography} from "@mui/material";
 import React  from "react";
 import SetOfCustomInputs from "@/app/pages/authorization-through-email/components/SetOfCustomInputs";

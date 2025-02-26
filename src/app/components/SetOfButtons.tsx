@@ -17,7 +17,7 @@ export function SetOfButtons() {
             mt: '1vh',
         }}>
         {registration.map((name) => <RegisterButton
-            key={name} registerImgSrc={ './' + name + '.svg'}
+            key={name} registerImgSrc={ '/' + name + '.svg'}
             onClick={() => {
                 if (name === "Email") {
                     router.push("/pages/authorization-through-email");

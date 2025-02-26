@@ -1,10 +1,10 @@
 'use client';
 
-import ImageBackground from "@/app/components/components/ImageBackground";
+import ImageBackground from "@/app/allPagesComponents/components/ImageBackground";
 import React  from "react";
 import {Box} from "@mui/material";
-import {RightContainer} from "@/app/components/components/RightContainer";
-import {ProductLogoOnTop} from "@/app/components/components/ProductLogoOnTop";
+import {RightContainer} from "@/app/allPagesComponents/components/RightContainer";
+import {ProductLogoOnTop} from "@/app/allPagesComponents/components/ProductLogoOnTop";
 
 export default function PageStructure ({ children }: { children: React.ReactNode }){
     return (

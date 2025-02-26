@@ -5,8 +5,8 @@ import {AuthorisationLink} from "@/app/components/AuthorisationLink";
 import {SetOfButtons} from "@/app/components/SetOfButtons";
 import React from "react";
 import CustomCheckbox from "@/app/components/CustomCheckbox";
-import PageStructure from "@/app/components/PageStructure";
-import RegistrationText from "@/app/components/components/RegistrationText";
+import PageStructure from "@/app/allPagesComponents/PageStructure";
+import RegistrationText from "@/app/allPagesComponents/components/RegistrationText";
 
 export default function Home() {
 
