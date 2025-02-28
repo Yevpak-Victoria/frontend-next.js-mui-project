@@ -1,12 +1,15 @@
-import {Box} from "@mui/material";
-import {ReactNode} from "react";
+import { Box } from '@mui/material'
+import { ReactNode } from 'react'
 
 interface RightContainerProps {
-    children: ReactNode;
+  children: ReactNode
 }
 
-export function RightContainer ({ children } : RightContainerProps)  {
-    return <Box component="div" sx={{
+export function RightContainer({ children }: RightContainerProps) {
+  return (
+    <Box
+      component='div'
+      sx={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
@@ -14,7 +17,9 @@ export function RightContainer ({ children } : RightContainerProps)  {
         width: '100%',
         px: '13%',
         position: 'relative',
-
-
-    }}>{children}</Box>
+      }}
+    >
+      {children}
+    </Box>
+  )
 }
